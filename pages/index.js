@@ -2,7 +2,10 @@ import Link from "next/link"
 import Layout from "../components/layout"
 export default function Home() {
   return (
-    <Layout>
+    <Layout
+      title={'Inicio'}
+      description={'Blog de musica, venta de guitarras'}
+    >
       <h1>Hola mundo desde Next</h1>
 
       <Link href="/nosotros">Nosotros</Link>
