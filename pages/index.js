@@ -1,5 +1,7 @@
 export default function Home() {
   return (
-    <h1>Hola mundo en Next</h1>
+    <>
+      <h1>Hola mundo desde Next</h1>
+    </>
   )
 }
