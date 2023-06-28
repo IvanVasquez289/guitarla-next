@@ -4,7 +4,7 @@ import styles from '../styles/header.module.css'
 const Header = () => {
   return (
     <header className={styles.header}>
-        <div className="contenedor">
+        <div className={`contenedor ${styles.barra}`}>
             <Image src='/img/logo.svg' width={200} height={10} alt="imagen logo"/>
 
             <nav className={styles.navegacion}>
