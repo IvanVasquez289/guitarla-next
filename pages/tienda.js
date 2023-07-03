@@ -2,7 +2,7 @@ import Layout from "../components/layout"
 import Guitarra from "../components/guitarra"
 import styles from '../styles/grid.module.css'
 const Tienda = ({guitarras}) => {
-  console.log(guitarras)
+  // console.log(guitarras)
   return (
     <Layout
         title={'Tienda'}
@@ -37,9 +37,9 @@ export default Tienda
 // }
 
 export async function getServerSideProps(){
-  const respuesta = await fetch(`${process.env.API_URL}api/guitarras?populate=imagen`)
+  const respuesta = await fetch(`${process.env.API_URL}/guitarras?populate=imagen`)
   const {data: guitarras} = await respuesta.json()
-  console.log(guitarras)
+  // console.log(guitarras)
   return{
     props:{
       guitarras
