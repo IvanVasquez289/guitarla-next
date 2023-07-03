@@ -26,7 +26,7 @@ const Tienda = ({guitarras}) => {
 export default Tienda
 
 // export async function getStaticProps(){
-//   const respuesta = await fetch(`${process.env.API_URL}api/guitarras?populate=imagen`)
+//   const respuesta = await fetch(`${process.env.API_URL}/guitarras?populate=imagen`)
 //   const {data: guitarras} = await respuesta.json()
 //   console.log(guitarras)
 //   return{
