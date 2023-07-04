@@ -29,7 +29,7 @@ export default Blog
 export async function getStaticProps(){
   const respuesta = await fetch(`${process.env.API_URL}/posts?populate=imagen`)
   const {data: posts} = await respuesta.json()
-  console.log(posts)
+  // console.log(posts)
   return{
     props:{
       posts
